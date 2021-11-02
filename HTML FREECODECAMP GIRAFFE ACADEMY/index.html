@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- charset default utf-8 -->
+    <meta name="description" content="This is an awesome website"> <!-- Meta for google, content -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin's Website</title>
+</head>
+<body style="background-color: lightblue;">
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <!-- BASIC TAGS -->
+        <h1>Kevin's Website</h1> <!-- Header Text -->
+        <!-- <br/> BREAK TAGS -->
+        <!-- <hr/> HORIZONTAL LINE -->
+        <p><big>This</big> <small>is my</small> <i><b>paragraph</b></i></p> <!-- Paragraph -->
+        <p>H<sub>2</sub>0</p>
+        <p>10<sup>2</sup></p>
+
+        <!-- COMMENT 
+            COMMENT
+        -->
+        <br/>
+
+        <!-- STYLE & COLORS -->
+        <h2 style="color:green;">Style and Colors</h2>
+        <p style="background-color:blue; color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit cumque eligendi quam ab dolore, id repudiandae nemo veritatis est at ut magni sint consequuntur autem voluptatibus. Ad illo doloribus eos?</p>
+
+        <!-- FORMATTING A PAGE -->
+        <!-- HEADER, MAIN, ARTICLE, SECTION, ASIDE, FOOTER ADALAH HTML TAG YANG BERGUNA UNTUK SEO DAN READABLE BAGI TIM DEVELOPER -->
+        <article>
+            <section> <!-- SECTION TIDAK PERLU HARUS PARENT NYA ARTICLE, TANPA ARTICLE JUGA BOLEH -->
+                <aside></aside> <!-- FOR ADS, IT'S NOT DIRECTLY RELATED TO THE CONTENT -->
+            </section>
+        </article>
+
+        <br/>
+        <!-- LINKS -->
+        <h1><a href="https://www.google.com">Google's Homepage</a> IN TAB PAGE</h1>
+        <h1><a href="https://www.google.com" target="_blank">Google's Homepage</a> NEW TAB PAGE</h1>
+        <h1><a href="page2.html">PAGE 2</a></h1>
+        <h1><a href="dir1/page3.html">PAGE 3</a></h1>
+        <h1><a href="cat.jpg">Cat.jpg</a></h1>
+        
+        <br/>
+        <!-- IMAGES -->
+        <!--
+            NOTE : In addition to setting both the width & height, you can choose to only set either the width or the height.
+            By only setting one, HTML will automatically adjust the aspect ratio for you. So if you only set width="100",
+            HTML will automatically resize the height correctly.
+        -->
+        <img 
+            width="100"
+            height="100"
+            src="cat.jpg" 
+            alt="A really scary dino" 
+        />
+
+        <br/>
+        <br/>
+        <h1 align="center">MONG GEI TA</h1>
+        <!-- VIDEOS & YOUTUBE IFRAMES -->
+        <center>
+            <video width="1080" poster="LOSER_THUMB.jpg" controls autoplay muted loop>
+                <source src="LOSER.mp4" type="video/mp4">
+                <!-- <source src="movie.ogg" type="video/ogg"> -->
+                Your browser does not support the video tag.
+            </video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+        
+        <br/>
+        <br/>
+        <!-- LISTS -->
+        <!-- <ul> -->
+        <ol type="I">
+            <li>
+                <a href="#">Apples</a>
+            </li>
+            <li>
+                <a href="#">Oranges</a>
+                <ol>
+                    <li>item1</li>
+                </ol>
+            </li>
+            <li>
+                <a href="#">Banana</a>
+            </li>
+        </ol>
+        <!-- </ul> -->
+        
+        <!-- DESCRIPTION LIST -->
+        <dl>
+            <!-- DESCRIPTION TERMS -->
+            <dt>Apples</dt>
+            <!-- DESCRIPTION CONTENTS -->
+            <dd>- They are red</dd>
+            <!-- DESCRIPTION TERMS -->
+            <dt>Oranges</dt>
+            <!-- DESCRIPTION CONTENTS -->
+            <dd>- They are orange</dd>
+        </dl>
+
+        <br/>
+        <br/>
+        <!-- TABLE -->
+        <table>
+            <!-- TABLE HEAD -->
+            <thead>
+                <!-- TABLE TITLE -->
+                <caption>
+                    <h2>List of Numbers</h2>
+                </caption>
+                <!-- TABLE ROW -->
+                <tr>
+                    <!-- TABLE HEADER -->
+                    <th>num1</th>
+                    <th>num2</th>
+                    <th>num3</th>
+                </tr>
+            </thead>
+            <!-- TABLE BODY -->
+            <tbody>
+                <tr>
+                    <!-- TABLE DATA -->
+                    <td colspan="3">one</td>
+                    <td>two</td>
+                    <td>three</td>
+                    <td>three and a half</td>
+                </tr>
+                <tr>
+                    <td>four</td>
+                    <td>five</td>
+                    <td>six</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br/>
+        <br/>
+        <!-- CONTAINER (WRAPPER) -->
+        <!-- DIV & SPAN -->
+
+        <!-- EX SPAN IS a href -->
+        <!-- SPAN IS INLINE ELEMENT -->
+        <a href="#">link1</a>
+        <a href="#">link2</a>
+
+        <hr/>
+
+        <!-- EX DIV IS p paragraph -->
+        <!-- DIV IS BLOCK ELEMENT -->
+        <p>Paragraph1</p>
+        <p>Paragraph2</p>
+
+        <hr/>
+        <br/>
+
+        <span>span1</span>
+        <span>span2</span>
+
+        <div>div1</div>
+        <div>div2</div>
+
+        <br/>
+        <br/>
+        <!-- INPUT & FORMS -->
+        <form action="">
+            <input type="text" value="Enter your username" />
+            <input type="password" />
+            <textarea name="" id="" cols="30" rows="10">Enter a paragraph</textarea>
+            <input type="date" />
+            <input type="range" />
+            <input type="file" />
+            <input type="checkbox" />
+            <input type="checkbox" />
+            <input type="radio" name="btn" />
+            <input type="radio" name="btn" />
+            <input type="submit" />
+        </form>
+
+        <br/>
+        <br/>
+        <!-- IFRAME -->
+        <iframe src="https://giraffeacademy.com/" width="1000" height="800" frameborder="0">Sorry</iframe>
+        <!-- TIDAK BISA IFRAME AMAZON, MASALAH KEAMANAN -->
+        <iframe src="https://amazon.com/" width="1000" height="800" frameborder="0">Sorry</iframe>
+        <!-- 
+            KARENA KALAU MISAL ADA HACKER PAKAI IFRAME KE WEBSITE LOGIN MISALNYA,
+            HACKER BISA SCRIPT JS NGAMBIL ID DAN PASSWORD DAN ETC LAINNYA
+        -->
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
