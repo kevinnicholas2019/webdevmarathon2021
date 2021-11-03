@@ -1,3 +1,8 @@
 PROGRAMMING WITH MOSH
 
 https://youtu.be/qz0aGYrrlhU
+
+HTML VALIDATOR: validator.w3.org
+CSS VALIDATOR: jigsaw.w3.org/css-validator/
+ENTITIES HTML: https://dev.w3.org/html5/html-author/charref
+UNSPLASH (FREE IMAGES): unsplash.com
