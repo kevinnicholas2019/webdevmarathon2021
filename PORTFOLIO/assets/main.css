@@ -94,7 +94,7 @@ header .nav a, header .nav img {
 }
 
 header .nav .logo {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bolder;
   color: var(--white);
   letter-spacing: .15em;
@@ -156,6 +156,7 @@ main .welcome .container {
 }
 
 main .welcome .container .col-left {
+  text-align: center;
   margin-right: 75px;
 }
 
@@ -163,7 +164,14 @@ main .welcome .container .col-left img {
   width: 275px;
   height: 275px;
   border-radius: 25px;
-  position: relative;
+  margin-bottom: 1.75em;
+}
+
+main .welcome .container .col-left h1 {
+  font-size: 3em;
+  margin: 0;
+  color: var(--white);
+  letter-spacing: .075em;
 }
 
 main .welcome .container .col-right {
@@ -176,14 +184,14 @@ main .welcome .container .col-right {
           flex-direction: column;
 }
 
-main .welcome .container h1 {
+main .welcome .container .col-right h1 {
   font-size: 5em;
   margin: 0;
   color: var(--white);
   letter-spacing: .075em;
 }
 
-main .welcome .container h2 {
+main .welcome .container .col-right h2 {
   font-size: 2em;
   color: var(--white);
   letter-spacing: .45em;
