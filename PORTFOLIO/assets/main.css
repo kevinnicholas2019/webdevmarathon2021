@@ -1,0 +1,204 @@
+:root {
+  --black: #232931;
+  --light-black: #393E46;
+  --light-blue: #4ECCA3;
+  --white: #EEEEEE;
+}
+
+:root --bg-gradient {
+  background: #232931;
+  background: -webkit-gradient(linear, left top, left bottom, from(#232931), color-stop(15%, #393e46), color-stop(85%, #4ecca3), to(#eeeeee));
+  background: linear-gradient(180deg, #232931 0%, #393e46 15%, #4ecca3 85%, #eeeeee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#232931",endColorstr="#eeeeee",GradientType=1);
+}
+
+:root --font-non-reader, :root header, :root main .welcome .container, main .welcome :root .container {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root --font-reader, :root main {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+}
+
+html, body, ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header a, header img {
+  text-decoration: none;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1080px;
+  margin: auto;
+  padding: 1em 0;
+}
+
+header .contact-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--black);
+}
+
+header .contact-nav a, header .contact-nav img {
+  color: var(--white);
+}
+
+header .contact-nav .contact li {
+  margin-right: 2em;
+}
+
+header .contact-nav .sosmed li {
+  margin-left: 1em;
+}
+
+header .nav {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
+
+header .nav a, header .nav img {
+  color: var(--black);
+}
+
+header .nav .logo {
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: var(--white);
+  letter-spacing: .15em;
+}
+
+header .nav .logo span {
+  color: var(--light-blue);
+}
+
+header .nav nav ul > li {
+  margin-left: 1.5em;
+}
+
+header .nav nav ul > li a {
+  color: var(--white);
+}
+
+header .nav nav ul > li .active {
+  font-weight: bold;
+}
+
+main .welcome {
+  position: relative;
+  height: calc(100vh - 51px);
+  min-height: 480px;
+}
+
+main .welcome:before {
+  content: '';
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: table;
+  background: url("images/bg-welcome.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  z-index: -1;
+}
+
+main .welcome .container {
+  width: 1080px;
+  height: 100%;
+  margin: auto;
+  padding: 5.75em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .welcome .container .col-left {
+  margin-right: 75px;
+}
+
+main .welcome .container .col-left img {
+  width: 275px;
+  height: 275px;
+  border-radius: 25px;
+  position: relative;
+}
+
+main .welcome .container .col-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .welcome .container h1 {
+  font-size: 5em;
+  margin: 0;
+  color: var(--white);
+  letter-spacing: .075em;
+}
+
+main .welcome .container h2 {
+  font-size: 2em;
+  color: var(--white);
+  letter-spacing: .45em;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+footer .container {
+  width: 1080px;
+  margin: auto;
+}
+
+footer .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=main.css.map */
