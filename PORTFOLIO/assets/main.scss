@@ -163,6 +163,10 @@ main {
                     margin: 0;
                     color: var(--white);
                     letter-spacing: .075em;
+
+                    span {
+                        color: var(--light-blue);
+                    }
                 }
 
                 margin-right: 75px;
@@ -175,7 +179,7 @@ main {
                 h1 {
                     font-size: 5em;
                     margin: 0;
-                    color: var(--white);
+                    color: lightblue;
                     letter-spacing: .075em;
                 }
     
