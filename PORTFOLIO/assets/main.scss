@@ -120,7 +120,7 @@ main {
     .welcome {
         position: relative;
         height: calc(100vh - 51px);
-        min-height: 480px;
+        min-height: 600px;
 
         &:before {
             content: '';
@@ -146,7 +146,7 @@ main {
             display: flex;
             flex-direction: row;
             justify-content: center;
-            // align-items: center;
+            align-items: center;
             @extend --font-non-reader;
 
             .col-left {
