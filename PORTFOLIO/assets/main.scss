@@ -36,6 +36,12 @@ ul {
     list-style-type: none;
 }
 
+.sosmed-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
 header {
     @extend --font-non-reader;
 
@@ -60,11 +66,17 @@ header {
         display: flex;
         background-color: var(--black);
 
+        .container {
+            padding: .35em 0;
+        }
+
         a, img {
             color: var(--white);
         }
 
         .contact {
+            display: flex;
+            align-items: center;
             li {
                 margin-right: 2em;
             }
@@ -72,7 +84,7 @@ header {
 
         .sosmed {
             li {
-                margin-left: 1em;
+                margin-left: .5em;
             }
         }
     }
@@ -119,8 +131,8 @@ main {
 
     .welcome {
         position: relative;
-        height: calc(100vh - 51px);
-        min-height: 600px;
+        height: calc(100vh - 38px);
+        min-height: 700px;
 
         &:before {
             content: '';
@@ -189,6 +201,59 @@ main {
                     letter-spacing: .45em;
                     font-weight: lighter;
                     text-transform: uppercase;
+                }
+            }
+        }
+
+        .container-btn-about-me {
+            position: absolute;
+            top: calc(80% + 50px);
+            left: 0;
+            width: 100%;
+            text-align: center;
+
+            button {
+                @extend --font-non-reader;
+                cursor: pointer;
+                max-width: 320px;
+                width: 100%;
+                padding: .45em;
+                border-radius: 10px;
+                border: 2px solid var(--light-blue);
+                color: var(--white);
+                font-size: 1.5em;
+                font-weight: bold;
+                background: transparent;
+                transition: all 0.25s;
+
+                @keyframes arrdanimate {
+                    0% {
+                        top: 0;
+                    }
+
+                    50% {
+                        top: -5px;
+                    }
+
+                    100% {
+                        top: 0;
+                    }
+                }
+
+                &:hover {
+                    background-color: var(--light-blue);
+                    transition: all 0.25s;
+
+                    span {
+                        animation: linear arrdanimate .75s infinite;
+                    }
+                }
+
+                span {
+                    position: relative;
+                    top: -2.5px;
+                    font-size: .75em;
+                    // animation: linear arrdanimate 5s infinite;
                 }
             }
         }
